@@ -5,7 +5,7 @@ import CountUp from "react-countup";
 import { Github, Instagram, Linkedin, Twitter } from "lucide-react"
 function Text() {
   return (
-    <div className='z-50 h-full md:w-[50%] flex flex-col gap-[48px] mt-40 md:mt-50 md:px-24 px-12'>
+    <div className='z-50 h-full md:w-[100%] lg:w-[50%] flex flex-col gap-[48px] mt-40 md:mt-50 md:px-24 px-12'>
       <div className="flex flex-col gap-[24px]">
         <TextAnimation />
         <p className='text-[19px] text-black/30 md:text-left text-center'>

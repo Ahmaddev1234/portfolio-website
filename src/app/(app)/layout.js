@@ -1,12 +1,17 @@
-import { Roboto } from "next/font/google";
-import "../globals.css"
+import { Quicksand,Roboto } from "next/font/google";
+import "../globals.css";
 
+const quicksand = Quicksand({
+  variable: "--font-quicksand",
+  subsets: ["latin"],
+  weight: ['400', '700'], // optional: specify weights you want to use
+});
 
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
+  weight: ['400', '700'],
 });
-
 
 export const metadata = {
   title: "Create Next App",
@@ -16,9 +21,7 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${roboto.variable}  antialiased`}
-      >
+      <body className={`${quicksand.variable} ${roboto.variable} antialiased`}>
         {children}
       </body>
     </html>

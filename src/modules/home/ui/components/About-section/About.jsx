@@ -1,11 +1,20 @@
 import React from 'react'
+import Text from './Text'
+import Img from './ImgSection'
 
 function About() {
   return (
-    <div className='px-32 py-12'>
+    <div className='flex flex-col px-32 py-12 gap-12'>
+      <div className=''>
         <div className='w-[20%] flex gap-2 items-center'>
-            <h2 className='text-[36px] text-[#13447f]'>About </h2>
+            <h2 className='text-[36px] font-semibold text-tertiary'>About </h2>
             <hr className='w-full font-extrabold border-1 border-[#13447f] text-[#13447f]' />
+        </div>
+        <p className='text-[16px] text-secondary'>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        </div>
+        <div className='flex md:flex-col lg:flex-row xs:flex-col '>
+          <Img/>
+          <Text/>
         </div>
     </div>
   )
