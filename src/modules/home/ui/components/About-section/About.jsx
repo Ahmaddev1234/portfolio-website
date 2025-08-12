@@ -4,7 +4,7 @@ import Img from './ImgSection'
 
 function About() {
   return (
-    <div className='flex flex-col px-32 py-12 gap-12'>
+    <div className='flex flex-col md:px-32 xs:px-4 py-12 gap-12'>
       <div className=''>
         <div className='w-[20%] flex gap-2 items-center'>
             <h2 className='text-[36px] font-semibold text-tertiary'>About </h2>
