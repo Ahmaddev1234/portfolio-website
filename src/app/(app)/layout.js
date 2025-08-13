@@ -4,13 +4,13 @@ import "../globals.css";
 const quicksand = Quicksand({
   variable: "--font-quicksand",
   subsets: ["latin"],
-  weight: ['400', '700'], // optional: specify weights you want to use
+  weight: ['400','500','600', '700'], 
 });
 
 const roboto = Roboto({
   variable: "--font-roboto",
   subsets: ["latin"],
-  weight: ['400', '700'],
+  weight: ['400','500','600', '700'],
 });
 
 export const metadata = {

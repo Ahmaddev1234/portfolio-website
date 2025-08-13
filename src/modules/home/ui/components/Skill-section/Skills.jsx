@@ -52,7 +52,7 @@ function Skills() {
                     <h2 className="text-[18px] text-tertiary">Certifications</h2>
                     <div className="flex flex-wrap gap-2">
                         {Tags.map((tag)=>(
-                            <button className="bg-primary px-[16px] py-[8px] text-white font-semibold text-[12px] rounded-full">{tag}
+                            <button className="bg-primary px-[16px] py-[8px] text-white font-bold text-[12px] rounded-full">{tag}
                             </button>
                         ))}
                     </div>

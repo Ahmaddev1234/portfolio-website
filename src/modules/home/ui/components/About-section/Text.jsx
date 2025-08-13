@@ -18,10 +18,10 @@ function Text() {
     ]
     return (
         <div className='flex flex-col gap-8 lg:w-[60%] md:w-[100%] xs:w-[100%]'>
-            <h2 className='md:text-[40px] xs:text-[32px] xs:text-center md:text-left font-bold text-tertiary'>
+            <h2 className='md:text-[40px] xs:text-[32px] xs:text-center md:text-left font-bold text-tertiary font-quicksand'>
                 Hi, I'm Ahmad - a Creative Developer
             </h2>
-            <p className='text-base text-secondary xs:text-center md:text-left'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
+            <p className='text-base text-secondary xs:text-center md:text-left font-quicksand'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper.</p>
 
             <div className='grid gap-4 md:grid-cols-2  xl:grid-cols-3 xs:grid-cols-1'>
                 {cardItems.map((item) => (
