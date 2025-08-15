@@ -1,19 +1,10 @@
 "use client"
 import { GraduationCap } from "lucide-react"
+import { AcademicStats } from '@/constants/constants'
 import EducationCard from "./EducationCard"
 function AcademicExcellence() {
 
-    const AcademicStats = [
-        {
-            name: "Master of Computer Science", Institution: "GC University", desc: `Advanced studies in computer science focusing on algorithms, software development, and emerging technologies`, duration: "2021-2025"
-        },
-        {
-            name: "FSC Pre Engineering", Institution: "Govt Post Graduate College Faisalabad", desc: `Completed FSc Pre-Engineering, covering physics, chemistry, and mathematics as a foundation for engineering and technology studies.`, duration: "2019 - 2021"
-        },
-        {
-            name: "Matric", Institution: "Government Higher Secondary School", desc: `Completed my matric, covering physics, chemistry, and mathematics as a foundation for engineering and technology studies.`, duration: "2017 - 2019"
-        }
-    ]
+
 
 
     return (
@@ -21,7 +12,7 @@ function AcademicExcellence() {
             <div className="flex flex-col gap-6">
                 <h2 className="text-[29px] text-tertiary font-semibold flex gap-2 items-center">
                     <GraduationCap />
-                    Professional Journey
+                    Academic Journey
                 </h2>
                 <p className="text-[16px] text-secondary">
                     Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas vestibulum tortor quam.

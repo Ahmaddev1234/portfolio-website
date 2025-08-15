@@ -1,16 +1,9 @@
+import { ProfessionalStats } from "@/constants/constants"
 import ExperienceCard from "./ExperienceCard"
 import { MessageSquareIcon } from "lucide-react"
 function ProfessionalJourney() {
 
-    const ProfessionalStats = [
-        {
-            name: "Frontend Engineer", company: "Sapient Compiles", desc: `Built responsive, interactive UIs with React.js, Tailwind CSS, and Framer Motion, delivering smooth animations and optimized performance.
-            `, responsibilities: ["Build responsive UIs with React and Tailwind CSS.", "Add smooth animations using Framer Motion.", "Integerate APIs for dynamic data"], duration: "2025 - Present"
-        },
-        {
-            name: "MernStack Intern", company: "Sapient Compiles", desc: `Developed full-stack web features using MongoDB, Express, React, and Node.js, contributing to both frontend UI and backend APIs.`, duration: "2025 - 2025"
-        }
-    ]
+
 
     return (
         <div className="flex flex-col lg:w-[50%] xs:w-[100%] gap-2">
