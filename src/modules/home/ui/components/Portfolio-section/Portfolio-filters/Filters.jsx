@@ -2,11 +2,19 @@
 "use client"
 import { Button } from "@/components/ui/button"
 import { PROJECTS,PrrojectCategories } from "@/constants/constants"
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import ProjectCard from "./ProjectCard";
 function Filters() {
     const [filteredProjects,setFilteredProjects]=useState([]);
+    const [activeCategory,setActiveCategory]=useState("All Projects");
+
+    useEffect(()=>{
+        setFilteredProjects(PROJECTS);
+    },[])
     const handleCategories=(category)=>{
+        setActiveCategory(category)
+        console.log(activeCategory);
+        
         if(category == "All Projects"){
         setFilteredProjects(PROJECTS);
 
@@ -23,7 +31,7 @@ function Filters() {
     <div className="flex flex-col w-full gap-16 justify-center">
     <div className="w-full flex flex-wrap gap-4 justify-center" >
         {PrrojectCategories.map((category)=>(
-            <Button onClick={()=>{handleCategories(category)}} variant="primary">
+            <Button onClick={()=>{handleCategories(category)}} variant={activeCategory === category ? "primary" : "outline"}>
                 {category}
             </Button>
         ))}

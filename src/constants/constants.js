@@ -1,5 +1,5 @@
 
-import {Code, Cookie,Zap,Camera,Layers,Verified,Sprout,Brain,Cloud,Settings,Database, Trophy,  Presentation, Users  } from 'lucide-react'
+import {Code, Cookie,Zap,Camera,Layers,Verified,Sprout,Brain,Cloud,Settings,Database, Trophy,  Presentation, Users, LocateIcon, Phone, MessageSquare, TwitterIcon, FacebookIcon, InstagramIcon, LinkedinIcon  } from 'lucide-react'
 
 
 export const Herocards = [
@@ -303,5 +303,140 @@ export const PROJECTS = [
       date: "March 2024"
     }
   ];
+
+
+
+
+
+
+
+
+
+  export const TESTIMONIALS = [
+    {
+      name: "Sarah Johnson",
+      role: "Marketing Manager, BrightTech",
+      message:
+        "The customer segmentation system helped us understand our audience better and boosted our campaign performance by 40%.",
+      rating: 5,
+      source: "BrightTech"
+    },
+    {
+      name: "David Chen",
+      role: "Founder, InnovateHub",
+      message:
+        "I was impressed with how easy it was to analyze data and identify our premium customers. The insights are priceless.",
+      rating: 4,
+      source: "InnovateHub"
+    },
+    {
+      name: "Emily Carter",
+      role: "Operations Lead, Nexa Solutions",
+      message:
+        "The interface is intuitive and the clustering results saved us weeks of manual work. Highly recommended!",
+      rating: 5,
+      source: "Nexa Solutions"
+    }
+  ];
+
+
+
+
+  export const TESTIMONIALS2 = [
+    {
+      name: "Sarah Johnson",
+      role: "Marketing Manager, BrightTech",
+      message:
+        "The customer segmentation system helped us understand our audience better and boosted our campaign performance by 40%.",
+      rating: 5,
+      source: "BrightTech"
+    },
+    {
+      name: "David Chen",
+      role: "Founder, InnovateHub",
+      message:
+        "I was impressed with how easy it was to analyze data and identify our premium customers. The insights are priceless.",
+      rating: 4,
+      source: "InnovateHub"
+    },
+    {
+      name: "Emily Carter",
+      role: "Operations Lead, Nexa Solutions",
+      message:
+        "The interface is intuitive and the clustering results saved us weeks of manual work. Highly recommended!",
+      rating: 5,
+      source: "Nexa Solutions"
+    },
+    {
+      name: "Sarah Johnson",
+      role: "Marketing Manager, BrightTech",
+      message:
+        "The customer segmentation system helped us understand our audience better and boosted our campaign performance by 40%.",
+      rating: 5,
+      source: "BrightTech"
+    },
+    {
+      name: "David Chen",
+      role: "Founder, InnovateHub",
+      message:
+        "I was impressed with how easy it was to analyze data and identify our premium customers. The insights are priceless.",
+      rating: 4,
+      source: "InnovateHub"
+    },
+    {
+      name: "Emily Carter",
+      role: "Operations Lead, Nexa Solutions",
+      message:
+        "The interface is intuitive and the clustering results saved us weeks of manual work. Highly recommended!",
+      rating: 5,
+      source: "Nexa Solutions"
+    }
+
+  ];
+  
+
+
+  export const FAQs = [
+    {
+      question: "What technologies do you specialize in as a frontend developer?",
+      answer:
+        "I specialize in building modern, responsive, and user-friendly interfaces using React.js, Next.js, and Tailwind CSS, with strong expertise in JavaScript/TypeScript. I also ensure seamless integration with backend APIs from Express.js and MongoDB.",
+    },
+    {
+      question: "How do you make sure your frontend applications are performant?",
+      answer:
+        "I follow best practices like code splitting, lazy loading, memoization, optimizing React re-renders, and image optimization. I also use tools like Lighthouse and React Profiler to measure performance and continuously improve it.",
+    },
+    {
+      question: "Do you also handle backend development, or only frontend?",
+      answer:
+        "While my main strength is frontend development, I’m also comfortable working with the backend part of the MERN stack. This includes setting up REST APIs, managing MongoDB databases, and building authentication systems with Express and JWT.",
+    },
+    {
+      question: "What kind of frontend projects have you worked on?",
+      answer:
+        "I’ve worked on projects like customer segmentation dashboards, LMS systems, personalized AI apps, and interactive web platforms. Most of these projects focus on responsive UIs, data visualization, and smooth user experiences.",
+    },
+    {
+      question: "How do you stay updated with the latest frontend technologies?",
+      answer:
+        "I stay updated by following React and Next.js official releases, reading frontend blogs, exploring new libraries in the JavaScript ecosystem, and building side projects to practice and implement new trends like server components, shadcn/ui, and animations with Framer Motion.",
+    },
+  ];
+
+
+  export const ContactDetails=[
+    {Icon:LocateIcon, title:"Our Location", desc:"P-111 National Colony Manawala Faisalabad"},
+    {Icon:Phone, title:"Phone Number", desc:"03017802697"},
+    {Icon:MessageSquare, title:"Email Address", desc:"ahmadhassan282013@gmail.com"}
+  ]
+
+  export const Icons=[
+    {Icon:TwitterIcon},
+    {Icon:FacebookIcon},
+    {Icon:InstagramIcon},
+    {Icon:LinkedinIcon}
+  ]
+  
   
   
