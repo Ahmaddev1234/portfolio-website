@@ -440,10 +440,10 @@ export const PROJECTS = [
   ]
 
   export const Icons=[
-    {Icon:TwitterIcon},
+    {Icon:TwitterIcon,},
     {Icon:FacebookIcon},
     {Icon:InstagramIcon},
-    {Icon:LinkedinIcon}
+    {Icon:LinkedinIcon, href:"https://www.linkedin.com/in/ahmad-hassan-268839298/"}
   ]
   
   

@@ -2,8 +2,20 @@ import { Building, Calendar, Link2, ClipboardList, AlertTriangle, Lightbulb,Chec
 import React from 'react'
 import DetailsAccordion from './DetailsAccordion'
 import { Button } from '@/components/ui/button'
+import { PROJECTS } from '@/constants/constants'
+import { useRouter } from 'next/navigation'
 
 function PortfolioDetailsContent({ Project }) {
+  const router=useRouter();
+  const handleNextProject=()=>{
+    const projectId=PROJECTS.findIndex((project)=>(
+      project.id == Project.id
+    ))
+    const nextProjectId=PROJECTS[projectId + 1].id
+    router.push(`/${nextProjectId}`)
+    
+  }
+
   return (
     <div className='flex flex-col lg:w-[50%] xs:w-[100%] text-secondary px-4 gap-6'>
       <div className='flex justify-between items-center '>
@@ -56,7 +68,7 @@ function PortfolioDetailsContent({ Project }) {
 
         <div className='flex sm:flex-row xs:flex-col gap-4'>
           <Button variant="primary">View Live Project</Button>
-          <Button variant="outline">Next Project</Button>
+          <Button variant="outline" onClick={handleNextProject} >Next Project</Button>
         </div>
         
         

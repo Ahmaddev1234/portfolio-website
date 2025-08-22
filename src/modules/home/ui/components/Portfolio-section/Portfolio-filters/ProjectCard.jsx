@@ -4,6 +4,7 @@ import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 import { MoveDiagonal, MoveRight } from 'lucide-react'
 import Preview from './Preview'
+import { PROJECTS } from '@/constants/constants'
 
 function ProjectCard({ Project }) {
   const router = useRouter();
@@ -36,8 +37,10 @@ function ProjectCard({ Project }) {
 
 
   const handleDetails=()=>{
-    router.push(`app/portfolioDetails/${Project.id}`)
+    router.push(`/${Project.id}`)
   }
+
+
 
   return (
     <motion.div
