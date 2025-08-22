@@ -106,8 +106,9 @@ export const PROJECTS = [
       id: "proj-001",
       images: [
         "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-1.webp", 
-        "https://images.unsplash.com/photo-1505236735602-3813fdee7c1d", 
-        "https://images.unsplash.com/photo-1518770660439-4636190af475"
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-10.webp", 
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-11.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-5.webp"
       ],
       name: "SmartHome Automation",
       link: "https://example.com/smarthome",
@@ -131,8 +132,9 @@ export const PROJECTS = [
       id: "proj-002",
       images: [
         "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-10.webp",
-        "https://images.unsplash.com/photo-1517430816045-df4b7de11d1f",
-        "https://images.unsplash.com/photo-1508921912186-1d1a45ebb3c1"
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-1.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-11.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-5.webp"
       ],
       name: "EcoTravel Portal",
       link: "https://example.com/ecotravel",
@@ -156,8 +158,9 @@ export const PROJECTS = [
       id: "proj-003",
       images: [
         "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-11.webp",
-        "https://images.unsplash.com/photo-1504384308090-c894fdcc538d",
-        "https://images.unsplash.com/photo-1433846595002-c3b07a2b8f94"
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-10.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-1.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-5.webp"
       ],
       name: "Agency Portfolio",
       link: "https://example.com/agency",
@@ -181,8 +184,9 @@ export const PROJECTS = [
       id: "proj-004",
       images: [
         "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-2.webp",
-        "https://images.unsplash.com/photo-1504198453319-5ce911bafcde",
-        "https://images.unsplash.com/photo-1445285621357-dcb30fcd6984"
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-4.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-5.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-5.webp"
       ],
       name: "FoodieLens Gallery",
       link: "https://example.com/foodielens",
@@ -206,8 +210,9 @@ export const PROJECTS = [
       id: "proj-005",
       images: [
         "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-4.webp",
-        "https://images.unsplash.com/photo-1526403222624-dfd9058c5737",
-        "https://images.unsplash.com/photo-1557804506-669a67965ba0"
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-2.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-5.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-10.webp"
       ],
       name: "FitTrack App",
       link: "https://example.com/fittrack",
@@ -231,8 +236,9 @@ export const PROJECTS = [
       id: "proj-006",
       images: [
         "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-5.webp",
-        "https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d",
-        "https://images.unsplash.com/photo-1507868244993-3da2e0a44e11"
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-4.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-2.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-10.webp"
       ],
       name: "BrandBoost Platform",
       link: "https://example.com/brandboost",
@@ -256,8 +262,9 @@ export const PROJECTS = [
       id: "proj-007",
       images: [
         "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-2.webp",
-        "https://images.unsplash.com/photo-1473187983305-f615310e7daa",
-        "https://images.unsplash.com/photo-1504280390367-361c6d9f38f4"
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-1.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-5.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-10.webp"
       ],
       name: "CityScape Drone Shots",
       link: "https://example.com/cityscape",
@@ -281,8 +288,9 @@ export const PROJECTS = [
       id: "proj-008",
       images: [
         "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-1.webp",
-        "https://images.unsplash.com/photo-1554774853-b9911b4b5a6c",
-        "https://images.unsplash.com/photo-1521791136064-7986c2920216"
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-2.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-5.webp",
+        "https://bootstrapmade.com/content/demo/Style/assets/img/portfolio/portfolio-10.webp"
       ],
       name: "EduSphere Platform",
       link: "https://example.com/edusphere",

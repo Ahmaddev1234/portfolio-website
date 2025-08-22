@@ -1,10 +1,12 @@
 "use client"
 import React, { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 import { MoveDiagonal, MoveRight } from 'lucide-react'
 import Preview from './Preview'
 
 function ProjectCard({ Project }) {
+  const router = useRouter();
   const [hovered, setHovered] = useState(false)
   const [isOpen, setIsOpen] = useState(false)
 
@@ -12,7 +14,7 @@ function ProjectCard({ Project }) {
     setIsOpen(true)
   }
 
-  // 🔑 Parent container variants (handles stagger)
+
   const containerVariants = {
     hidden: { opacity: 0, y: 80 },
     show: {
@@ -21,15 +23,20 @@ function ProjectCard({ Project }) {
       transition: {
         duration: 0.3,
         ease: "easeInOut",
-        staggerChildren: 0.15, // ✅ stagger here
+        staggerChildren: 0.15, 
       },
     },
   }
 
-  // 🔑 Child animation
+  
   const childVariants = {
     hidden: { opacity: 0, y: 40 },
     show: { opacity: 1, y: 0, transition: { duration: 0.3, ease: "easeInOut" } },
+  }
+
+
+  const handleDetails=()=>{
+    router.push(`app/portfolioDetails/${Project.id}`)
   }
 
   return (
@@ -69,6 +76,7 @@ function ProjectCard({ Project }) {
 
         <motion.div variants={containerVariants} className='flex gap-4'>
           <motion.div
+          onClick={handleDetails}
             variants={childVariants}
             className='bg-white w-12 h-12 group rounded-xl flex items-center cursor-pointer justify-center hover:bg-primary hover:text-white'
           >

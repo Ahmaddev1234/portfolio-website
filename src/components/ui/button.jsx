@@ -20,7 +20,8 @@ const buttonVariants = cva(
         ghost:
           "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
         link: "text-primary underline-offset-4 hover:underline",
-        primary:"text-[16px] px-[30px] py-[12px] bg-primary rounded-full hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary cursor-pointer  text-white font-semibold font-roboto"
+        primary:"text-[16px] px-[30px] py-[12px] bg-primary rounded-full hover:bg-white border-2 border-primary hover:border-2 hover:border-primary hover:text-primary cursor-pointer  text-white font-semibold font-roboto",
+        CarousalSpecial:"text-[16px] px-[30px]  py-[12px] bg-white rounded-full hover:bg-white  hover:border-2 hover:bg-primary hover:text-white cursor-pointer  text-black font-semibold font-roboto"
       },
       size: {
         default: "  has-[>svg]:px-3",
