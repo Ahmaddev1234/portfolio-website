@@ -1,9 +1,13 @@
 "use client"
-
+import { delay, motion } from "framer-motion"
 function SkillCard({ Icon, skill, technology }) {
     return (
-        <div
-        
+        <motion.div
+        initial={{ rotateY: -90 ,opacity:0}}
+        whileInView={{ rotateY:0,opacity:1 }}
+        transition={{ duration: 0.5 ,ease:"easeInOut"}}
+        viewport={{once:true,amount:1}}
+        style={{ transformStyle: "preserve-3d" }}
         className="flex flex-col gap-6 p-[30px] bg-gradient-to-br from-white to-[#f4f9ff] border-primary border-t-4 rounded-2xl hover:drop-shadow-[0_4px_12px_rgba(59,130,246,0.3)] hover:-translate-y-2 transition-all ease-in-out duration-200">
             <div className="flex gap-4 items-center">
                 <div className="bg-[#f0f6fc] px-3 py-2 rounded-lg">
@@ -22,17 +26,21 @@ function SkillCard({ Icon, skill, technology }) {
                         </div>
                         {/* <progress value={technology.percentage} max="100"></progress> */}
                         <div class=" bg-blue-200 rounded-full h-1.5 overflow-hidden">
-                            <div
+                            <motion.div
+                            initial={{ width:0}}
+                            whileInView={{width:`${technology.percentage}%`}}
+                            transition={{ duration: 0.3 ,ease:"easeInOut"}}
+                            viewport={{once:true,amount:1}}
                                 class="bg-primary h-full rounded-full transition-all duration-500"
                                 style={{ width: `${technology.percentage}%` }}>
-                            </div>
+                            </motion.div>
                         </div>
 
 
                     </div>
                 ))}
             </div>
-        </div>
+        </motion.div>
     )
 
 

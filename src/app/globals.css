@@ -3,6 +3,9 @@
 
 
 @custom-variant dark (&:is(.dark *));
+spline-viewer {
+  display: none;
+}
 
 @theme inline {
   --color-background: var(--background);

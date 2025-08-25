@@ -18,8 +18,13 @@ function ServiceCard({Icon,name,desc}) {
 
     const [hovered,setHovered]=useState(false);
     return (
-        <div>
-            <MotionCard className="relative overflow-hidden"
+        <motion.div
+        initial={{opacity:0,y:80}}
+        whileInView={{opacity:1,y:0}}
+        transition={{duration:0.5,ease:"easeIn"}}
+        viewport={{once:true,amount:0.5}}
+        >
+            <Card className="relative overflow-hidden"
             onMouseEnter={() => setHovered(true)}
             onMouseLeave={() => setHovered(false)}
             >
@@ -48,8 +53,8 @@ function ServiceCard({Icon,name,desc}) {
                     <CardDescription className="text-[16px] text-secondary mt-2">{desc}</CardDescription>
                     <CardContent className="text-[16px] text-primary flex gap-4 mt-4">Learn more <span><MoveRight className="text-primary"/></span></CardContent>
                 </CardHeader>
-            </MotionCard>
-        </div>
+            </Card>
+        </motion.div>
     )
 }
 

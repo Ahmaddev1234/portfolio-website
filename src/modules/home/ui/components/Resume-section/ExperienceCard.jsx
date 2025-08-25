@@ -1,8 +1,14 @@
+"use client"
 import { CheckIcon } from "lucide-react"
-
+import { motion } from "framer-motion"
 function ExperienceCard({ name, company, desc, responsibilities,duration }) {
     return (
-        <div className="flex flex-col gap-3 border-1 border-secondary border-l-5 border-l-primary rounded-xl p-[28px] hover:shadow-[0_4px_28px_rgba(40,58,78,0.4)] hover:-translate-y-2 transition-all ease-in-out duration-200">
+        <motion.div
+        initial={{opacity:0,x: typeof window !== "undefined" && window.innerWidth < 640 ? -20 : -100}}
+        whileInView={{opacity:1,x:0}}
+        transition={{duration:0.5,ease:"easeIn"}}
+        viewport={{once:true}}
+        className="flex flex-col gap-3 border-1 border-secondary border-l-5 border-l-primary rounded-xl p-[28px] hover:shadow-[0_4px_28px_rgba(40,58,78,0.4)] hover:-translate-y-2 transition-all ease-in-out duration-200">
             <div className="flex md:flex-row xs:flex-col xs:gap-2 md:gap-0 md:items-center md:justify-between">
                 <div className="flex flex-col gap-0">
                     <h1 className="text-[20px] text-tertiary font-bold">{name}</h1>
@@ -27,7 +33,7 @@ function ExperienceCard({ name, company, desc, responsibilities,duration }) {
 
 
             </div>
-        </div>
+        </motion.div>
     )
 }
 

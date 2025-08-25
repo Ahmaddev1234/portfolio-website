@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { motion } from 'framer-motion'
 function EduCard({year,desc}) {
   return (
     <div className='flex gap-4 px-2 py-4 border-l-3 hover:bg-[#f0f6fc] rounded-r-lg border-primary'>

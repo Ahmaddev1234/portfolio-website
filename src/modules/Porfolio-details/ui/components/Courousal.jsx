@@ -1,5 +1,6 @@
 import React from 'react'
 import Autoplay from 'embla-carousel-autoplay';
+import { motion } from 'framer-motion';
 import {
   Carousel,
   CarouselContent,
@@ -22,6 +23,8 @@ function Courousal({Project}) {
       align:"start",
       loop:"true"
     }}
+
+    
     className="rounded-2xl overflow-hidden shadow-[0_4px_18px_rgba(40,58,78,0.4)]">
   <CarouselContent>
     {Project.images.map((img)=>(

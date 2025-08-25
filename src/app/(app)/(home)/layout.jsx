@@ -11,7 +11,7 @@ import Skills from "@/modules/home/ui/components/Skill-section/Skills"
 import Testimonials from "@/modules/home/ui/components/Testimonials-section/Testimonials"
 function layout() {
   return (
-    <div>
+    <div >
       <NavbarSidebar/>
       <HeroSection/>
       <About/>

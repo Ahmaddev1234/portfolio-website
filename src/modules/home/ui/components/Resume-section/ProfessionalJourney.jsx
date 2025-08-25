@@ -1,3 +1,4 @@
+"use client"
 import { ProfessionalStats } from "@/constants/constants"
 import ExperienceCard from "./ExperienceCard"
 import { MessageSquareIcon } from "lucide-react"

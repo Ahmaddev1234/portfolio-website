@@ -1,8 +1,17 @@
 "use client"
+import { motion } from "framer-motion";
 import { SkillCardItems,SkillStats,SkillTags } from "@/constants/constants"
 import SkillCard from "./SkillCard"
 function Skills() {
-
+    const fadeInUp = {
+        hidden: { opacity: 0, y: 80 },
+        visible: { opacity: 1, y: 0 },
+      };
+      
+        const fadeInRight = {
+        hidden: { opacity: 0, x: typeof window !== "undefined" && window.innerWidth < 640 ? 20 : 100 },
+        visible: { opacity: 1, x: 0 },
+      };
 
 
     return (
@@ -13,14 +22,38 @@ function Skills() {
                 ))}
             </div>
             <div className="flex flex-col lg:w-[30%] xs:w-[100%] px-6 gap-6 py-8  shadow-[0_4px_12px_rgba(59,130,246,0.3)] rounded-xl">
-                <h2 className="text-[24px] text-primary">
+                <motion.h2
+                variants={fadeInRight}
+                initial="hidden"
+                whileInView="visible"
+                transition={{
+                  duration:0.5
+                }}
+                viewport={{ once: true, amount: 1 }}
+                className="text-[24px] text-primary">
                     Professional Expertise
-                </h2>
-                <p className="text-[16px] text-secondary">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                </p>
+                </motion.h2>
+                <motion.p
+                variants={fadeInRight}
+                initial="hidden"
+                whileInView="visible"
+                transition={{
+                  duration:0.5
+                }}
+                viewport={{ once: true, amount: 1 }}
+                className="text-[16px] text-secondary">
+                    Professional expertise adds value by blending knowledge with practical skills. It ensures efficiency, nurtures trust, drives innovation, and delivers lasting impact across projects.
+                </motion.p>
 
-                <div className="flex flex-col gap-8 ">
+                <motion.div
+                variants={fadeInRight}
+                initial="hidden"
+                whileInView="visible"
+                transition={{
+                  duration:0.5
+                }}
+                viewport={{ once: true, amount: 1 }}
+                className="flex flex-col gap-8 ">
                     {SkillStats.map((item)=>(
 
                         <div className="flex gap-2 items-center">
@@ -33,8 +66,16 @@ function Skills() {
                             </div>
                         </div>
                     ))}
-                </div>
-                <div className="flex flex-col gap-4">
+                </motion.div>
+                <motion.div
+                variants={fadeInUp}
+                initial="hidden"
+                whileInView="visible"
+                transition={{
+                  duration:0.5
+                }}
+                viewport={{ once: true, amount: 1 }}
+                className="flex flex-col gap-4">
                     <h2 className="text-[18px] text-tertiary">Certifications</h2>
                     <div className="flex flex-wrap gap-2">
                         {SkillTags.map((tag)=>(
@@ -42,7 +83,7 @@ function Skills() {
                             </button>
                         ))}
                     </div>
-                </div>
+                </motion.div>
 
 
             </div>

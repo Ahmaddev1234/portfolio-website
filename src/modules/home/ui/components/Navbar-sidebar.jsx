@@ -1,3 +1,4 @@
+import { Icons } from "@/constants/constants"
 import {
     Sheet,
     SheetContent,
@@ -7,14 +8,15 @@ import {
     SheetTrigger,
   } from "@/components/ui/sheet"
 import { FacebookIcon, InstagramIcon, LinkedinIcon, MenuIcon, TwitterIcon } from "lucide-react"
+import Link from "next/link"
 
 
 const NavbarItems=[
     {href:"/" , children:"Home"},
-    {href:"/" , children:"About"},
-    {href:"/" , children:"Resume"},
-    {href:"/" , children:"Portfolio"},
-    {href:"/" , children:"Services"}
+    {href:"#aboutUs" , children:"About"},
+    {href:"#resume" , children:"Resume"},
+    {href:"#portfolio" , children:"Portfolio"},
+    {href:"#services" , children:"Services"}
 ]
 
 const NavbarItem=({href,children,isActive})=>{
@@ -44,26 +46,14 @@ function NavbarSidebar() {
                               </div>
                               <h1 className="text-[24px]">Alex Smith</h1>
                               <div className="flex gap-4">
-                                  <a href="/" className="cursor-pointer">
-                                      <div className="h-10 w-10 rounded-full flex justify-center items-center bg-[#4675ac] hover:bg-primary">
-                                          <TwitterIcon size={12} color="white" />
-                                      </div>
-                                  </a>
-                                  <a href="/" className="cursor-pointer">
-                                      <div className="h-10 w-10 rounded-full flex justify-center items-center bg-[#4675ac] hover:bg-primary">
-                                          <FacebookIcon size={12} color="white" />
-                                      </div>
-                                  </a>
-                                  <a href="/" className="cursor-pointer">
-                                      <div className="h-10 w-10 rounded-full flex justify-center items-center bg-[#4675ac] hover:bg-primary">
-                                          <InstagramIcon size={12} color="white" />
-                                      </div>
-                                  </a>
-                                  <a href="/" className="cursor-pointer">
-                                      <div className="h-10 w-10 rounded-full flex justify-center items-center bg-[#4675ac] hover:bg-primary">
-                                          <LinkedinIcon size={12} color="white" />
-                                      </div>
-                                  </a>
+                                {Icons.map((Icon)=>(
+                                    <Link href={Icon.href} target="_blank"  className="cursor-pointer">
+                                    <div className="h-10 w-10 rounded-full flex justify-center items-center bg-[#4675ac] hover:bg-primary">
+                                        <Icon.Icon size={12} color="white" />
+                                    </div>
+                                </Link>
+                                ))}
+                                  
                               </div>
                             </div>
                         </SheetTitle>

@@ -1,8 +1,15 @@
+"use client"
 import React from 'react'
 import { Star, Quote } from 'lucide-react'
+import { motion } from 'framer-motion'
 function TetimonialCard({ name, role, rating, message, source }) {
     return (
-        <div className='w-full relative px-6 py-10 flex-col h-auto gap-4 flex justify-left rounded-lg  bg-cover bg-center shadow-[0_0px_20px_rgba(173,194,210,0.2)] hover:-translate-y-[20px] duration-200 ease-in '>
+        <motion.div
+        initial={{opacity:0,y:80}}
+        whileInView={{opacity:1,y:0}}
+        transition={{duration:0.5,ease:"easeIn"}}
+        viewport={{once:true,amount:0.1}}
+        className='w-full relative px-6 py-10 flex-col h-auto gap-4 flex justify-left rounded-lg  bg-cover bg-center shadow-[0_0px_20px_rgba(173,194,210,0.2)] hover:-translate-y-[20px] duration-200 ease-in '>
             <div className='absolute top-[-20px] left-[20px]'>
 
                 <Quote
@@ -23,7 +30,7 @@ function TetimonialCard({ name, role, rating, message, source }) {
             </p>
             <p className=' text-[15px] text-black italic'>{message}</p>
             <p className='text-primary font-semibold'>{role}</p>
-        </div>
+        </motion.div>
     )
 }
 

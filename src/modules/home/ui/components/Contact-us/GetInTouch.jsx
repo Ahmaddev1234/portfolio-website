@@ -1,12 +1,17 @@
+"use client"
 import { Button } from '@/components/ui/button'
-import React from 'react'
-
+import { motion } from 'framer-motion'
 function GetInTouch() {
   return (
-    <form className='flex flex-col lg:w-[60%] bg-white gap-8 rounded-lg p-8 ' >
+    <motion.form
+    initial={{opacity:0,y:80}}
+        whileInView={{opacity:1,y:0}}
+        transition={{duration:0.5,ease:"easeIn"}}
+        viewport={{once:true,amount:0.1}}
+    className='flex flex-col lg:w-[60%] bg-white gap-8 rounded-lg p-8 ' >
         <div className='flex flex-col gap-4 :'>
             <h2 className='text-[32px] font-medium text-tertiary'>Get In Touch</h2>
-            <p className='text-[16px] text-secondary font-semibold '>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Vestibulum ante ipsum primis.</p>
+            <p className='text-[16px] text-secondary font-semibold '>Connect with me directly to share your ideas, request services, or start a collaboration.</p>
         </div>
 
         <div className='flex lg:flex-row xs:flex-col gap-4 w-full'>
@@ -21,7 +26,7 @@ function GetInTouch() {
         </textarea>
         <Button className="self-center"  variant="primary" type="submit" >Send Message</Button>
   
-    </form>
+    </motion.form>
   )
 }
 

@@ -1,8 +1,16 @@
+"use client"
 import React from 'react'
 import { Star, Quote } from 'lucide-react'
+import { motion } from 'framer-motion'
 function CourousalCard({ name, role, rating, message, source }) {
     return (
-        <div className='w-full relative px-6 py-6 flex-col border border-t-4 border-t-primary overflow-hidden  gap-4 flex justify-left rounded-lg  bg-cover bg-center shadow-[0_0px_8px_rgba(173,194,210,0.2)]  '>
+        <motion.div
+        initial={{opacity:0,y:80}}
+        whileInView={{opacity:1,y:0}}
+        transition={{duration:0.5,ease:"easeIn"}}
+        viewport={{once:true,amount:0.5}}
+
+        className='w-full relative px-6 py-6 flex-col border border-t-4 border-t-primary overflow-hidden  gap-4 flex justify-left rounded-lg  bg-cover bg-center shadow-[0_0px_8px_rgba(173,194,210,0.2)]  '>
             <p className='text-lg text-[#ffd900] font-bold flex gap-2'>
                 {Array.from({ length: rating }).map((_, i) => (
                     <span > <Star
@@ -23,7 +31,7 @@ function CourousalCard({ name, role, rating, message, source }) {
                     <h4 className='text-[14px] text-secondary'>{source}</h4>
                 </div>
             </div>
-        </div>
+        </motion.div>
     )
 }
 

@@ -3,6 +3,7 @@ function page({params}) {
     const {id}=params;
 
   return (
+    
     <Details id={id}/>
   )
 }

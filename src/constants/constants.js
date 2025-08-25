@@ -1,5 +1,5 @@
 
-import {Code, Cookie,Zap,Camera,Layers,Verified,Sprout,Brain,Cloud,Settings,Database, Trophy,  Presentation, Users, LocateIcon, Phone, MessageSquare, TwitterIcon, FacebookIcon, InstagramIcon, LinkedinIcon  } from 'lucide-react'
+import {Code, Cookie,Zap,Camera,Layers,Verified,Sprout,Brain,Cloud,Settings,Database, Trophy,  Presentation, Users, LocateIcon, Phone, MessageSquare, TwitterIcon, FacebookIcon, InstagramIcon, LinkedinIcon, Github  } from 'lucide-react'
 
 
 export const Herocards = [
@@ -10,9 +10,9 @@ export const Herocards = [
 
 
 export const AboutCardItems = [
-    { icon: Cookie, name: "UI/UX Design", Desc: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar" },
-    { icon: Code, name: "Frontend Dev", Desc: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar" },
-    { icon: Camera, name: "Photography", Desc: "Mauris blandit aliquet elit, eget tincidunt nibh pulvinar" }
+    { icon: Cookie, name: "UI/UX Design", Desc: "Great UI and UX design blends clarity with beauty, ensuring flow" },
+    { icon: Code, name: "Frontend Dev", Desc: "A frontend developer builds fast, responsive, and modern apps" },
+    { icon: Camera, name: "Photography", Desc: "Choosing the right images defines mood, style, and impact" }
 ]
 
 export const AboutEduItems=[
@@ -56,12 +56,12 @@ export const ProfessionalStats = [
 
 
 export const services=[
-    {Icon:Layers, name:"Digital Solutions", desc:"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam eaque ipsa."},
-    {Icon:Verified, name:"Secure Systems", desc:"Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."},
-    {Icon:Sprout, name:"Growth Strategy", desc:"Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem."},
-    {Icon:Brain, name:"Ai Integertion", desc:"Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem."},
-    {Icon:Cloud, name:"Cloud Services", desc:"Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem."},
-    {Icon:Settings, name:"Process Automation", desc:"Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur vel illum qui dolorem."},
+    {Icon:Layers, name:"Digital Solutions", desc:"Delivering innovative digital solutions that transform businesses, enhance customer engagement, and create seamless experiences across all platforms."},
+    {Icon:Verified, name:"Secure Systems", desc:"Building secure systems with strong protection, encryption, and compliance, ensuring data privacy, safe transactions, and reliable digital infrastructures."},
+    {Icon:Sprout, name:"Growth Strategy", desc:"Crafting growth strategies to maximize market potential, increase brand presence, and help organizations achieve sustainable success."},
+    {Icon:Brain, name:"Ai Integertion", desc:"Enabling businesses to harness AI integration for smarter insights, automation, personalization, and efficiency, unlocking new opportunities for innovation."},
+    {Icon:Cloud, name:"Cloud Services", desc:"Providing scalable cloud services that improve flexibility, reduce costs, and empower organizations with modern infrastructure, storage, and reliable access."},
+    {Icon:Settings, name:"Process Automation", desc:"Designing process automation that minimizes errors, accelerates workflows, and increases productivity while freeing teams to focus on innovation and growth."},
 ]
 
 
@@ -440,9 +440,9 @@ export const PROJECTS = [
   ]
 
   export const Icons=[
-    {Icon:TwitterIcon,},
-    {Icon:FacebookIcon},
-    {Icon:InstagramIcon},
+    {Icon:Github,href:"https://github.com/Ahmaddev1234"},
+    {Icon:FacebookIcon,href:"https://www.facebook.com/profile.php?id=100082479317911"},
+    {Icon:InstagramIcon,href:"https://www.instagram.com/artistic_aura12/"},
     {Icon:LinkedinIcon, href:"https://www.linkedin.com/in/ahmad-hassan-268839298/"}
   ]
   
